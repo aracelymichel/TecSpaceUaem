@@ -1,0 +1,149 @@
+/* El selector `:root` en CSS se utiliza para seleccionar el elemento raíz del documento, que
+normalmente es el `:root`<html> `elemento. */
+:root{
+    --primary-font-color1: #aeaeb3; 
+    --primary-font-color2: #ffe643;
+    font-family: 'Tenorite', sans-serif;
+   /* font-family: 'Dosis', sans-serif; */
+}
+
+.navbar-light {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #131212;
+    
+}
+
+.navbar-light .container a, .navbar-light .container .collapse .navbar-nav .nav-item .nav-link{
+    color: var(--primary-font-color1);
+}
+
+.background-main{
+    height: 100vh;
+    background: linear-gradient(rgba(20,20,20, .5),rgba(20,20,20, .5)),url(../img/agua.jpg);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 89%, 51% 100%, 0 89%);
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 51% 100%, 0 89%);
+}
+
+.background-main, .services-class{
+    max-width: 100%;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    color:rgb(255, 255, 255);
+}
+
+.background-main h1{
+    font-size: 6rem;
+}
+
+.background-main .main { 
+    display: table; 
+    width: 100%;
+    height: 82vh;
+    text-align: center;
+    /*
+    display: flex; 
+    width: 50%; 
+    height: 200px; 
+    margin: auto; 
+    */
+} 
+
+.background-main .main .main-title,.background-main .main p { 
+    display: table-cell;
+    vertical-align: middle;
+    /*margin: auto;  Important 
+    text-align: center;  */
+}
+
+/* El código CSS `.main-link` define los estilos para un elemento con la clase "main-link". Establece
+el tamaño de fuente en 44px y el color en el valor de la variable CSS `--primary-font-color1`. */
+.main-link{
+    font-size: 44px;
+    color: var(--primary-font-color1);
+}
+.main-link:hover{
+    color:var(--primary-font-color2);
+}
+
+/* El código CSS `.about-us,.services-class{ margin-top: 3em; }` establece un margen superior de 3em
+para elementos con las clases "acerca de nosotros" y "clase de servicios". Esto creará un espacio
+vertical de 3em sobre estos elementos. */
+.about-us,.services-class{
+    margin-top: 3em;
+    margin-bottom: 3em; 
+}
+
+/* La clase CSS `.line-shape` define los estilos para un elemento de forma de línea. */
+.line-shape{
+    width: 10%;
+    height: 2px;
+    margin-left: calc(49% - 40px);
+    background-color: var(--primary-font-color2);
+    margin-top: 17px;
+    margin-bottom: 25px;
+}
+
+/* La clase CSS `.services-class` define los estilos para una sección con la clase "services-class". */
+.services-class{
+    max-width: 100%;
+    height: 93vh;
+    background: linear-gradient(rgba(20,20,20, .5),rgba(20,20,20, .5)),url(../img/bg-2.jpeg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    -webkit-clip-path: polygon(0 7%, 100% 0, 100% 96%, 0 100%);
+    clip-path: polygon(0 7%, 100% 0, 100% 96%, 0 100%);
+}
+
+/* El código CSS `.services-class .section-heading, .portfolio-title,.contact-us .section-heading` está
+dirigido a múltiples elementos con diferentes clases. */
+.services-class .section-heading, .portfolio-title,.contact-us .section-heading{
+    font-size: 34px;
+    margin-top: 2.5em;
+}
+
+.services-class .container .service-box .text-muted{
+    color: rgb(255, 255, 255) !important
+}
+
+/* La clase CSS `.contact-us` define los estilos para una sección con la clase "contact-us". */
+.contact-us{
+    max-width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(20,20,20, .5),rgba(20,20,20, .5)),url(../img/bg-3.jpeg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    color: rgb(255, 255, 255);
+    -webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 94%);
+    clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 94%);
+    font-size: 1.4em;
+}
+
+/* El código CSS `footer.footer .social-link` está dirigido a la clase `social-link` dentro del
+elemento `footer` con la clase `footer`. Consiste en definir los estilos de los enlaces sociales en
+la sección de pie de página de una página web. */
+
+footer.footer .social-link {
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4.3rem;
+    font-size: 2.5rem;
+    background-color: var(--primary-font-color2);
+    -webkit-transition: background-color .15s ease-in-out;
+    transition: background-color .15s ease-in-out;
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+}
+
+/* El código CSS `footer.footer .social-link:hover` está dirigido a la clase `social-link` dentro del
+elemento `footer` con la clase `footer`. */
+footer.footer .social-link:hover{
+    background-color: rgba(20,20,20, .5);
+}
